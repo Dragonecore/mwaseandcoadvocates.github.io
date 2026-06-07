@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mwase & Co. Advocates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mwase & Co. Advocates</h1>
+                <p>Jinja, Uganda</p>
+            </div>
+            <nav>
+                <ul class="nav-tabs">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Practice Areas</a></li>
+                    <li><a href="attorney.html">Advocate</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Send an email or visit our offices in Jinja</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-details">
+                    <h3>📍 Office Location</h3>
+                    <p>Mwase & Co. Advocates<br>
+                    Main Street, Plot 24<br>
+                    Jinja City, Uganda</p>
+
+                    <h3>📞 Phone</h3>
+                    <p>+256 772 123 456<br>+256 434 120 789</p>
+
+                    <h3>✉️ Email (Direct)</h3>
+                    <p><a href="mailto:diplomatstanley@gmail.com">diplomatstanley@gmail.com</a><br>
+                    <a href="mailto:mwase.stanley@mwaseco.ug">mwase.stanley@mwaseco.ug</a></p>
+                </div>
+
+                <div class="email-form">
+                    <h3>Send an Email Directly</h3>
+                    <form id="emailForm" action="https://formspree.io/f/xbdwlpzq" method="POST">
+                        <label for="senderName">Your Name</label>
+                        <input type="text" id="senderName" required>
+
+                        <label for="senderEmail">Your Email</label>
+                        <input type="email" id="senderEmail" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+
+                        <label for="emailMessage">Message</label>
+                        <textarea id="emailMessage" rows="5" required></textarea>
+
+                        <button type="submit" class="btn">Send Email</button>
+                    </form>
+                    <div id="emailFeedback" class="feedback"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mwase & Co. Advocates. Jinja, Uganda.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
